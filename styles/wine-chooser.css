@@ -1,0 +1,72 @@
+#image {
+  grid-area: image;
+  max-height: 24rem;
+  place-self: center;
+}
+
+#name {
+  grid-area: name;
+}
+
+.region {
+  grid-area: region;
+}
+
+#description {
+  grid-area: description;
+}
+
+#price {
+  grid-area: price;
+  align-self: center;
+  /* font-size: 1.5rem;*/
+  font-weight: bold;
+}
+
+.grapes {
+  grid-area: grapes;
+}
+
+.grapes,
+.region {
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#product-link {
+  grid-area: product-link;
+  background-color: var(--primary);
+  color: var(--off-white);
+  width: fit-content;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+
+  &:hover {
+    background-color: var(--primary-dark);
+    text-decoration: none;
+  }
+
+  &:active {
+    background-color: var(--primary-darker);
+  }
+}
+
+.chosen-wine {
+  margin: 2rem 0;
+  display: grid;
+  gap: 1rem;
+  grid-template:
+    "image name name"
+    "image description description"
+    "image region region"
+    "image grapes grapes"
+    "image product-link price"
+    "image . ." /
+    1fr auto 2fr;
+}
+
+#new-wine-button {
+  align-self: center;
+}

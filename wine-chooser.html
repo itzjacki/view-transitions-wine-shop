@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Jakob's fine wines</title>
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/wine-chooser.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/pick-wine.js" type="module" defer></script>
+  </head>
+  <body>
+    <header>
+      <a id="logo" href="/">Jakob's fine wines</a>
+      <nav>
+        <ul>
+          <li><a href="/">Catalogue</a></li>
+          <li>
+            <a class="underlined" href="/wine-chooser.html">Choose for me</a>
+          </li>
+          <li><a href="/club.html">Wine club</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Choose for me</h1>
+      <p>
+        Not sure what wine to get? By analyzing your mouse movement with our
+        proprietary AI model we have already identified a perfect wine for you.
+        If you would like another suggestion, just hit the button below!
+      </p>
+      <button id="new-wine-button" class="secondary">
+        Find another perfect wine
+      </button>
+
+      <section class="chosen-wine">
+        <img id="image" src="" alt="Bottle of wine" />
+        <h2 id="name"></h2>
+        <p id="description"></p>
+        <div id="price"></div>
+        <div class="region">
+          <img class="icon" src="/assets/icons/globe.svg" alt="" />
+          <span id="region"></span>
+        </div>
+        <div class="grapes">
+          <img class="icon" src="/assets/icons/plant.svg" alt="" />
+          <span id="grapes"></span>
+        </div>
+        <a id="product-link" href="/">Product page →</a>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+:root {
+  --off-white: oklch(97.38% 0.0086 84.57);
+  --off-white-dark: oklch(from var(--off-white) calc(l - 0.03) c h);
+  --off-white-darker: oklch(from var(--off-white) calc(l - 0.06) c h);
+  --off-black: oklch(18.46% 0.0246 350.56);
+  --primary: oklch(40% 0.15 26);
+  --primary-light: oklch(from var(--primary) calc(l + 0.05) c h);
+  --primary-lighter: oklch(from var(--primary) calc(l + 0.1) c h);
+  --primary-dark: oklch(from var(--primary) calc(l - 0.05) c h);
+  --primary-darker: oklch(from var(--primary) calc(l - 0.1) c h);
+}
+
+body {
+  margin: 0;
+  background-color: var(--off-white);
+  color: var(--off-black);
+  font-family: "Host Grotesk", sans-serif;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+button {
+  border: none;
+  background-color: var(--primary);
+  color: var(--off-white);
+  width: fit-content;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+
+  &:hover {
+    background-color: var(--primary-dark);
+  }
+
+  &:active {
+    background-color: var(--primary-darker);
+  }
+
+  &.secondary {
+    background-color: var(--off-white);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+
+    &:hover {
+      background-color: var(--off-white-dark);
+    }
+
+    &:active {
+      background-color: var(--off-white-darker);
+    }
+  }
+}
+
+header,
+main {
+  width: 100%;
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  align-items: center;
+  margin-top: 2rem;
+}
+
+header nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+#logo {
+  font-family: "Fleur De Leah", cursive;
+  font-size: 3rem;
+  color: var(--off-black);
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+.icon {
+  max-height: 1.2rem;
+}

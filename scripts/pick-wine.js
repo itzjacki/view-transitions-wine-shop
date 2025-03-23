@@ -1,4 +1,4 @@
-import { wines } from "/scripts/wines.js";
+import { wines } from "./wines.js";
 
 const image = document.getElementById("image");
 const name = document.getElementById("name");

@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Jakob's fine wines</title>
-    <link rel="stylesheet" href="styles/common.css" />
-    <link rel="stylesheet" href="styles/catalogue.css" />
+    <link rel="stylesheet" href="/styles/common.css" />
+    <link rel="stylesheet" href="/styles/catalogue.css" />
+    <link rel="stylesheet" href="/styles/catalogue-view-transition-names.css" />
+    <link rel="preload" href="/styles/product.css" as="style" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,12 +23,12 @@
         <ul>
           <li><a class="underlined" href="/">Catalogue</a></li>
           <li><a href="./wine-chooser.html">Choose for me</a></li>
-          <li><a href="./club.html">Wine club</a></li>
+          <li><a href="./about.html">About</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <ul>
+      <ul class="wine-list">
         <li class="wine-1">
           <a class="wine-card" href="/product/001.html">
             <div class="background"></div>
@@ -50,6 +52,258 @@
               <span>100% Frappato</span>
             </div>
             <div class="price">$41</div>
+            <div class="buy-placeholder"></div>
+          </a>
+        </li>
+
+        <li class="wine-2">
+          <a class="wine-card" href="/product/002.html">
+            <div class="background"></div>
+            <img
+              class="image"
+              src="assets/images/002.png"
+              alt="Bottle of wine"
+            />
+            <h2 class="name">Stag's Leap Artemis 2020</h2>
+            <div class="description-placeholder"></div>
+            <div class="region">
+              <img class="icon" src="/assets/icons/globe.svg" alt="Region" />
+              <span>USA, California</span>
+            </div>
+            <div class="grapes">
+              <img
+                class="icon"
+                src="/assets/icons/plant.svg"
+                alt="Grape varieties"
+              />
+              <span>91% Cabernet Sauvignon, 7% Merlot, 2% Petit Verdot</span>
+            </div>
+            <div class="price">$75</div>
+            <div class="buy-placeholder"></div>
+          </a>
+        </li>
+
+        <li class="wine-3">
+          <a class="wine-card" href="/product/003.html">
+            <div class="background"></div>
+            <img
+              class="image"
+              src="assets/images/003.png"
+              alt="Bottle of wine"
+            />
+            <h2 class="name">Chateau Léoville Barton 2011</h2>
+            <div class="description-placeholder"></div>
+            <div class="region">
+              <img class="icon" src="/assets/icons/globe.svg" alt="Region" />
+              <span>France, Bordeaux</span>
+            </div>
+            <div class="grapes">
+              <img
+                class="icon"
+                src="/assets/icons/plant.svg"
+                alt="Grape varieties"
+              />
+              <span>
+                72% Cabernet Sauvignon, 20% Merlot, 8% Cabernet Franc
+              </span>
+            </div>
+            <div class="price">$130</div>
+            <div class="buy-placeholder"></div>
+          </a>
+        </li>
+
+        <li class="wine-4">
+          <a class="wine-card" href="/product/004.html">
+            <div class="background"></div>
+            <img
+              class="image"
+              src="assets/images/004.png"
+              alt="Bottle of wine"
+            />
+            <h2 class="name">Bibi Graetz Testamatta 2021</h2>
+            <div class="description-placeholder"></div>
+            <div class="region">
+              <img class="icon" src="/assets/icons/globe.svg" alt="Region" />
+              <span>Italy, Tuscany</span>
+            </div>
+            <div class="grapes">
+              <img
+                class="icon"
+                src="/assets/icons/plant.svg"
+                alt="Grape varieties"
+              />
+              <span>100% Sangiovese</span>
+            </div>
+            <div class="price">$93</div>
+            <div class="buy-placeholder"></div>
+          </a>
+        </li>
+
+        <li class="wine-5">
+          <a class="wine-card" href="/product/005.html">
+            <div class="background"></div>
+            <img
+              class="image"
+              src="assets/images/005.png"
+              alt="Bottle of wine"
+            />
+            <h2 class="name">Chiara Condello Le Lucciole 2018</h2>
+            <div class="description-placeholder"></div>
+            <div class="region">
+              <img class="icon" src="/assets/icons/globe.svg" alt="Region" />
+              <span>Italy, Emilia-Romagna</span>
+            </div>
+            <div class="grapes">
+              <img
+                class="icon"
+                src="/assets/icons/plant.svg"
+                alt="Grape varieties"
+              />
+              <span>100% Sangiovese</span>
+            </div>
+            <div class="price">$61</div>
+            <div class="buy-placeholder"></div>
+          </a>
+        </li>
+
+        <li class="wine-6">
+          <a class="wine-card" href="/product/006.html">
+            <div class="background"></div>
+            <img
+              class="image"
+              src="assets/images/006.png"
+              alt="Bottle of wine"
+            />
+            <h2 class="name">Viña Tondonia Reserva 2011</h2>
+            <div class="description-placeholder"></div>
+            <div class="region">
+              <img class="icon" src="/assets/icons/globe.svg" alt="Region" />
+              <span>Spain, Rioja</span>
+            </div>
+            <div class="grapes">
+              <img
+                class="icon"
+                src="/assets/icons/plant.svg"
+                alt="Grape varieties"
+              />
+              <span>
+                75% Tempranillo, 15% Garnacha, 5% Mazuelo, 5% Graciano
+              </span>
+            </div>
+            <div class="price">$40</div>
+            <div class="buy-placeholder"></div>
+          </a>
+        </li>
+
+        <li class="wine-7">
+          <a class="wine-card" href="/product/007.html">
+            <div class="background"></div>
+            <img
+              class="image"
+              src="assets/images/007.png"
+              alt="Bottle of wine"
+            />
+            <h2 class="name">Kaiken Ultra Pinot Noir 2022</h2>
+            <div class="description-placeholder"></div>
+            <div class="region">
+              <img class="icon" src="/assets/icons/globe.svg" alt="Region" />
+              <span>Argentina, Patagonia</span>
+            </div>
+            <div class="grapes">
+              <img
+                class="icon"
+                src="/assets/icons/plant.svg"
+                alt="Grape varieties"
+              />
+              <span>100% Pinot Noir</span>
+            </div>
+            <div class="price">$22</div>
+            <div class="buy-placeholder"></div>
+          </a>
+        </li>
+
+        <li class="wine-8">
+          <a class="wine-card" href="/product/008.html">
+            <div class="background"></div>
+            <img
+              class="image"
+              src="assets/images/008.png"
+              alt="Bottle of wine"
+            />
+            <h2 class="name">Le Volte dell' Ornellaia 2022</h2>
+            <div class="description-placeholder"></div>
+            <div class="region">
+              <img class="icon" src="/assets/icons/globe.svg" alt="Region" />
+              <span>Italy, Tuscany</span>
+            </div>
+            <div class="grapes">
+              <img
+                class="icon"
+                src="/assets/icons/plant.svg"
+                alt="Grape varieties"
+              />
+              <span>67% Merlot, 20% Cabernet Sauvignon, 13% Sangiovese</span>
+            </div>
+            <div class="price">$31</div>
+            <div class="buy-placeholder"></div>
+          </a>
+        </li>
+
+        <li class="wine-9">
+          <a class="wine-card" href="/product/009.html">
+            <div class="background"></div>
+            <img
+              class="image"
+              src="assets/images/009.png"
+              alt="Bottle of wine"
+            />
+            <h2 class="name">Le Clarence de Haut-Brion 2021</h2>
+            <div class="description-placeholder"></div>
+            <div class="region">
+              <img class="icon" src="/assets/icons/globe.svg" alt="Region" />
+              <span>France, Bordeaux</span>
+            </div>
+            <div class="grapes">
+              <img
+                class="icon"
+                src="/assets/icons/plant.svg"
+                alt="Grape varieties"
+              />
+              <span>
+                70% Merlot, 18% Cabernet Sauvignon, 12% Cabernet Franc
+              </span>
+            </div>
+            <div class="price">$116</div>
+            <div class="buy-placeholder"></div>
+          </a>
+        </li>
+
+        <li class="wine-10">
+          <a class="wine-card" href="/product/010.html">
+            <div class="background"></div>
+            <img
+              class="image"
+              src="assets/images/010.png"
+              alt="Bottle of wine"
+            />
+            <h2 class="name">Chateau Margaux 2021</h2>
+            <div class="description-placeholder"></div>
+            <div class="region">
+              <img class="icon" src="/assets/icons/globe.svg" alt="Region" />
+              <span>France, Bordeaux</span>
+            </div>
+            <div class="grapes">
+              <img
+                class="icon"
+                src="/assets/icons/plant.svg"
+                alt="Grape varieties"
+              />
+              <span
+                >87% Cabernet Sauvignon, 8% Merlot, 3% Cabernet Franc, 2% Petit
+                Verdot</span
+              >
+            </div>
+            <div class="price">$645</div>
             <div class="buy-placeholder"></div>
           </a>
         </li>

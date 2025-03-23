@@ -11,7 +11,7 @@ export const wines = [
   },
   {
     id: "002",
-    name: "Stag's Leap Artemis Cabernet Sauvignon 2020",
+    name: "Stag's Leap Artemis 2020",
     price: "75",
     grapes: "91% Cabernet Sauvignon, 7% Merlot, 2% Petit Verdot",
     description: "Blackberries, black cherries, spices, vanilla.",
@@ -19,7 +19,7 @@ export const wines = [
   },
   {
     id: "003",
-    name: "Ch. Léoville Barton 2011",
+    name: "Chateau Léoville Barton 2011",
     price: "130",
     grapes: "72% Cabernet Sauvignon, 20% Merlot, 8% Cabernet Franc",
     description:
@@ -82,7 +82,7 @@ export const wines = [
   },
   {
     id: "010",
-    name: "Ch. Margaux 2021",
+    name: "Chateau Margaux 2021",
     price: "645",
     grapes:
       "87% Cabernet Sauvignon, 8% Merlot, 3% Cabernet Franc, 2% Petit Verdot",

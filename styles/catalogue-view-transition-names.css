@@ -1,0 +1,442 @@
+/* Could I have written a dead simple script to generate this? Yes. */
+/* Did I use ChatGPT instead? Also yes. */
+
+.wine-1 {
+  & .image {
+    view-transition-name: wine-1-image;
+  }
+  & .name {
+    view-transition-name: wine-1-name;
+  }
+  & .description-placeholder,
+  .description {
+    view-transition-name: wine-1-description;
+  }
+  & .region {
+    & img {
+      view-transition-name: wine-1-region-image;
+    }
+    & span {
+      view-transition-name: wine-1-region-text;
+    }
+  }
+  & .grapes {
+    & img {
+      view-transition-name: wine-1-grape-image;
+    }
+    & span {
+      view-transition-name: wine-1-grape-text;
+    }
+  }
+  & .price {
+    view-transition-name: wine-1-price;
+  }
+  & .buy-placeholder {
+    view-transition-name: wine-1-buy;
+  }
+  & .background {
+    view-transition-name: wine-1-background;
+  }
+  & .back-link {
+    view-transition-name: wine-1-back-link;
+  }
+  & .buy {
+    view-transition-name: wine-1-buy;
+  }
+}
+
+.wine-2 {
+  & .image {
+    view-transition-name: wine-2-image;
+  }
+  & .name {
+    view-transition-name: wine-2-name;
+  }
+  & .description-placeholder,
+  .description {
+    view-transition-name: wine-2-description;
+  }
+  & .region {
+    & img {
+      view-transition-name: wine-2-region-image;
+    }
+    & span {
+      view-transition-name: wine-2-region-text;
+    }
+  }
+  & .grapes {
+    & img {
+      view-transition-name: wine-2-grape-image;
+    }
+    & span {
+      view-transition-name: wine-2-grape-text;
+    }
+  }
+  & .price {
+    view-transition-name: wine-2-price;
+  }
+  & .buy-placeholder {
+    view-transition-name: wine-2-buy;
+  }
+  & .background {
+    view-transition-name: wine-2-background;
+  }
+  & .back-link {
+    view-transition-name: wine-2-back-link;
+  }
+  & .buy {
+    view-transition-name: wine-2-buy;
+  }
+}
+
+.wine-3 {
+  & .image {
+    view-transition-name: wine-3-image;
+  }
+  & .name {
+    view-transition-name: wine-3-name;
+  }
+  & .description-placeholder,
+  .description {
+    view-transition-name: wine-3-description;
+  }
+  & .region {
+    & img {
+      view-transition-name: wine-3-region-image;
+    }
+    & span {
+      view-transition-name: wine-3-region-text;
+    }
+  }
+  & .grapes {
+    & img {
+      view-transition-name: wine-3-grape-image;
+    }
+    & span {
+      view-transition-name: wine-3-grape-text;
+    }
+  }
+  & .price {
+    view-transition-name: wine-3-price;
+  }
+  & .buy-placeholder {
+    view-transition-name: wine-3-buy;
+  }
+  & .background {
+    view-transition-name: wine-3-background;
+  }
+  & .back-link {
+    view-transition-name: wine-3-back-link;
+  }
+  & .buy {
+    view-transition-name: wine-3-buy;
+  }
+}
+
+.wine-4 {
+  & .image {
+    view-transition-name: wine-4-image;
+  }
+  & .name {
+    view-transition-name: wine-4-name;
+  }
+  & .description-placeholder,
+  .description {
+    view-transition-name: wine-4-description;
+  }
+  & .region {
+    & img {
+      view-transition-name: wine-4-region-image;
+    }
+    & span {
+      view-transition-name: wine-4-region-text;
+    }
+  }
+  & .grapes {
+    & img {
+      view-transition-name: wine-4-grape-image;
+    }
+    & span {
+      view-transition-name: wine-4-grape-text;
+    }
+  }
+  & .price {
+    view-transition-name: wine-4-price;
+  }
+  & .buy-placeholder {
+    view-transition-name: wine-4-buy;
+  }
+  & .background {
+    view-transition-name: wine-4-background;
+  }
+  & .back-link {
+    view-transition-name: wine-4-back-link;
+  }
+  & .buy {
+    view-transition-name: wine-4-buy;
+  }
+}
+
+.wine-5 {
+  & .image {
+    view-transition-name: wine-5-image;
+  }
+  & .name {
+    view-transition-name: wine-5-name;
+  }
+  & .description-placeholder,
+  .description {
+    view-transition-name: wine-5-description;
+  }
+  & .region {
+    & img {
+      view-transition-name: wine-5-region-image;
+    }
+    & span {
+      view-transition-name: wine-5-region-text;
+    }
+  }
+  & .grapes {
+    & img {
+      view-transition-name: wine-5-grape-image;
+    }
+    & span {
+      view-transition-name: wine-5-grape-text;
+    }
+  }
+  & .price {
+    view-transition-name: wine-5-price;
+  }
+  & .buy-placeholder {
+    view-transition-name: wine-5-buy;
+  }
+  & .background {
+    view-transition-name: wine-5-background;
+  }
+  & .back-link {
+    view-transition-name: wine-5-back-link;
+  }
+  & .buy {
+    view-transition-name: wine-5-buy;
+  }
+}
+
+.wine-6 {
+  & .image {
+    view-transition-name: wine-6-image;
+  }
+  & .name {
+    view-transition-name: wine-6-name;
+  }
+  & .description-placeholder,
+  .description {
+    view-transition-name: wine-6-description;
+  }
+  & .region {
+    & img {
+      view-transition-name: wine-6-region-image;
+    }
+    & span {
+      view-transition-name: wine-6-region-text;
+    }
+  }
+  & .grapes {
+    & img {
+      view-transition-name: wine-6-grape-image;
+    }
+    & span {
+      view-transition-name: wine-6-grape-text;
+    }
+  }
+  & .price {
+    view-transition-name: wine-6-price;
+  }
+  & .buy-placeholder {
+    view-transition-name: wine-6-buy;
+  }
+  & .background {
+    view-transition-name: wine-6-background;
+  }
+  & .back-link {
+    view-transition-name: wine-6-back-link;
+  }
+  & .buy {
+    view-transition-name: wine-6-buy;
+  }
+}
+
+.wine-7 {
+  & .image {
+    view-transition-name: wine-7-image;
+  }
+  & .name {
+    view-transition-name: wine-7-name;
+  }
+  & .description-placeholder,
+  .description {
+    view-transition-name: wine-7-description;
+  }
+  & .region {
+    & img {
+      view-transition-name: wine-7-region-image;
+    }
+    & span {
+      view-transition-name: wine-7-region-text;
+    }
+  }
+  & .grapes {
+    & img {
+      view-transition-name: wine-7-grape-image;
+    }
+    & span {
+      view-transition-name: wine-7-grape-text;
+    }
+  }
+  & .price {
+    view-transition-name: wine-7-price;
+  }
+  & .buy-placeholder {
+    view-transition-name: wine-7-buy;
+  }
+  & .background {
+    view-transition-name: wine-7-background;
+  }
+  & .back-link {
+    view-transition-name: wine-7-back-link;
+  }
+  & .buy {
+    view-transition-name: wine-7-buy;
+  }
+}
+
+.wine-8 {
+  & .image {
+    view-transition-name: wine-8-image;
+  }
+  & .name {
+    view-transition-name: wine-8-name;
+  }
+  & .description-placeholder,
+  .description {
+    view-transition-name: wine-8-description;
+  }
+  & .region {
+    & img {
+      view-transition-name: wine-8-region-image;
+    }
+    & span {
+      view-transition-name: wine-8-region-text;
+    }
+  }
+  & .grapes {
+    & img {
+      view-transition-name: wine-8-grape-image;
+    }
+    & span {
+      view-transition-name: wine-8-grape-text;
+    }
+  }
+  & .price {
+    view-transition-name: wine-8-price;
+  }
+  & .buy-placeholder {
+    view-transition-name: wine-8-buy;
+  }
+  & .background {
+    view-transition-name: wine-8-background;
+  }
+  & .back-link {
+    view-transition-name: wine-8-back-link;
+  }
+  & .buy {
+    view-transition-name: wine-8-buy;
+  }
+}
+
+.wine-9 {
+  & .image {
+    view-transition-name: wine-9-image;
+  }
+  & .name {
+    view-transition-name: wine-9-name;
+  }
+  & .description-placeholder,
+  .description {
+    view-transition-name: wine-9-description;
+  }
+  & .region {
+    & img {
+      view-transition-name: wine-9-region-image;
+    }
+    & span {
+      view-transition-name: wine-9-region-text;
+    }
+  }
+  & .grapes {
+    & img {
+      view-transition-name: wine-9-grape-image;
+    }
+    & span {
+      view-transition-name: wine-9-grape-text;
+    }
+  }
+  & .price {
+    view-transition-name: wine-9-price;
+  }
+  & .buy-placeholder {
+    view-transition-name: wine-9-buy;
+  }
+  & .background {
+    view-transition-name: wine-9-background;
+  }
+  & .back-link {
+    view-transition-name: wine-9-back-link;
+  }
+  & .buy {
+    view-transition-name: wine-9-buy;
+  }
+}
+
+.wine-10 {
+  & .image {
+    view-transition-name: wine-10-image;
+  }
+  & .name {
+    view-transition-name: wine-10-name;
+  }
+  & .description-placeholder,
+  .description {
+    view-transition-name: wine-10-description;
+  }
+  & .region {
+    & img {
+      view-transition-name: wine-10-region-image;
+    }
+    & span {
+      view-transition-name: wine-10-region-text;
+    }
+  }
+  & .grapes {
+    & img {
+      view-transition-name: wine-10-grape-image;
+    }
+    & span {
+      view-transition-name: wine-10-grape-text;
+    }
+  }
+  & .price {
+    view-transition-name: wine-10-price;
+  }
+  & .buy-placeholder {
+    view-transition-name: wine-10-buy;
+  }
+  & .background {
+    view-transition-name: wine-10-background;
+  }
+  & .back-link {
+    view-transition-name: wine-10-back-link;
+  }
+  & .buy {
+    view-transition-name: wine-10-buy;
+  }
+}

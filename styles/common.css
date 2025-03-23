@@ -151,7 +151,26 @@ header nav ul {
   animation-duration: 3s;
 } */
 
+/* https://youtu.be/0fPRO2SApO8 */
 ::view-transition-new(wine-1-background),
-::view-transition-old(wine-1-background) {
+::view-transition-old(wine-1-background),
+::view-transition-new(wine-2-background),
+::view-transition-old(wine-2-background),
+::view-transition-new(wine-3-background),
+::view-transition-old(wine-3-background),
+::view-transition-new(wine-4-background),
+::view-transition-old(wine-4-background),
+::view-transition-new(wine-5-background),
+::view-transition-old(wine-5-background),
+::view-transition-new(wine-6-background),
+::view-transition-old(wine-6-background),
+::view-transition-new(wine-7-background),
+::view-transition-old(wine-7-background),
+::view-transition-new(wine-8-background),
+::view-transition-old(wine-8-background),
+::view-transition-new(wine-9-background),
+::view-transition-old(wine-9-background),
+::view-transition-new(wine-10-background),
+::view-transition-old(wine-10-background) {
   height: 100%;
 }

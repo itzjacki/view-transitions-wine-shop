@@ -1,10 +1,10 @@
-.club-form {
+.about-form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.club-form label {
+.about-form label {
   font-size: 0.75rem;
   color: var(--primary);
   display: block;

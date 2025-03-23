@@ -70,3 +70,11 @@
 #new-wine-button {
   align-self: center;
 }
+/* 
+::view-transition-old(root) {
+  animation: slide-to-left 0.3s;
+}
+
+::view-transition-new(root) {
+  animation: slide-from-right 0.3s;
+} */

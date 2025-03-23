@@ -1,3 +1,8 @@
+/* Sort of the point of this whole project */
+@view-transition {
+  navigation: auto;
+}
+
 :root {
   --off-white: oklch(97.38% 0.0086 84.57);
   --off-white-dark: oklch(from var(--off-white) calc(l - 0.03) c h);
@@ -12,6 +17,7 @@
 
 body {
   margin: 0;
+  padding: 0 1rem;
   background-color: var(--off-white);
   color: var(--off-black);
   font-family: "Host Grotesk", sans-serif;
@@ -79,6 +85,7 @@ main {
 header {
   align-items: center;
   margin-top: 2rem;
+  view-transition-name: header;
 }
 
 header nav ul {
@@ -102,4 +109,49 @@ header nav ul {
 
 .icon {
   max-height: 1.2rem;
+}
+
+@keyframes slide-to-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100vw);
+  }
+}
+
+@keyframes slide-from-right {
+  from {
+    transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-to-right {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100vw);
+  }
+}
+
+@keyframes slide-from-left {
+  from {
+    transform: translateX(-100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* ::view-transition-group(*) {
+  animation-duration: 3s;
+} */
+
+::view-transition-new(wine-1-background),
+::view-transition-old(wine-1-background) {
+  height: 100%;
 }

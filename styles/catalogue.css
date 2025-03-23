@@ -1,0 +1,126 @@
+.background {
+  background-color: var(--off-white-darker);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 1rem;
+}
+
+.image {
+  grid-area: image;
+  max-height: 16rem;
+  margin: -2rem 0 2rem;
+}
+
+.name {
+  margin-top: 2rem;
+  grid-area: name;
+  width: fit-content;
+}
+
+.region {
+  grid-area: region;
+}
+
+.description-placeholder {
+  grid-area: description;
+  margin: -1.5rem 0 1.5rem;
+}
+
+.price {
+  grid-area: price;
+  align-self: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  width: fit-content;
+}
+
+.grapes {
+  grid-area: grapes;
+}
+
+.grapes,
+.region {
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  & span {
+    width: fit-content;
+  }
+}
+
+.buy-placeholder {
+  grid-area: buy;
+  width: 141px; /* Don't ask */
+  margin: 0 2rem 0 -2rem;
+}
+
+.wine-card {
+  position: relative;
+  display: grid;
+  gap: 0.5rem 2rem;
+  color: var(--off-black);
+  grid-template:
+    "image  name name"
+    "image  description description"
+    "image  region region"
+    "image  grapes grapes"
+    "image . ."
+    "image price buy" /
+    auto 1fr auto;
+  padding: 0 2rem;
+  margin: 0.5rem;
+  transition: margin 0.3s, padding 0.3s;
+  height: fit-content;
+
+  &:hover {
+    padding: 0.5rem 2.5rem;
+    margin: 0rem;
+    text-decoration: none;
+  }
+}
+
+.wine-1 {
+  & .wine-card {
+    view-transition-name: wine-1;
+  }
+  & .image {
+    view-transition-name: wine-1-image;
+  }
+  & .name {
+    view-transition-name: wine-1-name;
+  }
+  & .description-placeholder {
+    view-transition-name: wine-1-description;
+  }
+  & .region {
+    & img {
+      view-transition-name: wine-1-region-image;
+    }
+    & span {
+      view-transition-name: wine-1-region-text;
+    }
+  }
+  & .grapes {
+    & img {
+      view-transition-name: wine-1-grape-image;
+    }
+    & span {
+      view-transition-name: wine-1-grape-text;
+    }
+  }
+  & .price {
+    view-transition-name: wine-1-price;
+  }
+  & .buy-placeholder {
+    view-transition-name: wine-1-buy;
+  }
+  & .background {
+    view-transition-name: wine-1-background;
+  }
+}

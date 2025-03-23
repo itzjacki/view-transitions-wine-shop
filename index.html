@@ -2,8 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Jakob's fine wines</title>
     <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/catalogue.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,6 +25,35 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <ul>
+        <li class="wine-1">
+          <a class="wine-card" href="/product/001.html">
+            <div class="background"></div>
+            <img
+              class="image"
+              src="assets/images/001.png"
+              alt="Bottle of wine"
+            />
+            <h2 class="name">Occhipinti Il Frappato 2022</h2>
+            <div class="description-placeholder"></div>
+            <div class="region">
+              <img class="icon" src="/assets/icons/globe.svg" alt="Region" />
+              <span>Italy, Sicily</span>
+            </div>
+            <div class="grapes">
+              <img
+                class="icon"
+                src="/assets/icons/plant.svg"
+                alt="Grape varieties"
+              />
+              <span>100% Frappato</span>
+            </div>
+            <div class="price">$41</div>
+            <div class="buy-placeholder"></div>
+          </a>
+        </li>
+      </ul>
+    </main>
   </body>
 </html>

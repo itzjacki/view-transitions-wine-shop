@@ -1,0 +1,123 @@
+main {
+  padding: 2rem;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  position: relative;
+}
+
+.header-replacement {
+  view-transition-name: header;
+  margin: -10rem 0 10rem; /* This is a little hacky, but works */
+}
+
+.background {
+  background-color: var(--off-white-darker);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.image {
+  grid-area: image;
+  max-height: 20rem;
+  place-self: center;
+}
+
+.name {
+  grid-area: name;
+  width: fit-content;
+}
+
+.region {
+  grid-area: region;
+}
+
+.description {
+  grid-area: description;
+}
+
+.price {
+  grid-area: price;
+  align-self: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: fit-content;
+}
+
+.grapes {
+  grid-area: grapes;
+}
+
+.grapes,
+.region {
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  & span {
+    width: fit-content;
+  }
+}
+
+.buy {
+  grid-area: buy;
+}
+
+.overview {
+  display: grid;
+  margin: 2rem 4rem 0 2rem;
+  gap: 0.5rem 2rem;
+  grid-template:
+    "image name name"
+    "image description description"
+    "image region region"
+    "image grapes grapes"
+    "image . ."
+    "image price buy"
+    "image . ." /
+    auto 1fr auto;
+}
+
+.wine-1 {
+  & .background {
+    view-transition-name: wine-1-background;
+  }
+  & .back-link {
+    view-transition-name: wine-1-back-link;
+  }
+  & .image {
+    view-transition-name: wine-1-image;
+  }
+  & .name {
+    view-transition-name: wine-1-name;
+  }
+  & .description {
+    view-transition-name: wine-1-description;
+  }
+  & .region {
+    & img {
+      view-transition-name: wine-1-region-image;
+    }
+    & span {
+      view-transition-name: wine-1-region-text;
+    }
+  }
+  & .grapes {
+    & img {
+      view-transition-name: wine-1-grape-image;
+    }
+    & span {
+      view-transition-name: wine-1-grape-text;
+    }
+  }
+  & .price {
+    view-transition-name: wine-1-price;
+  }
+  & .buy {
+    view-transition-name: wine-1-buy;
+  }
+}

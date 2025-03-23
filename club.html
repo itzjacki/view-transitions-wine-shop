@@ -2,8 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jakob's fine wines</title>
     <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/club.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,6 +24,32 @@
         </ul>
       </nav>
     </header>
-    <main><h1>Wine club</h1></main>
+    <main>
+      <h1>Wine club</h1>
+      <div>
+        <p>
+          Join our wine club and get a curated selection of wines delivered to
+          your door every month. You can choose between red, white, or mixed
+          cases. We also offer a premium subscription with exclusive wines from
+          our private collection.
+        </p>
+        <form class="club-form">
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label for="subscription">Subscription:</label>
+            <select id="subscription" name="subscription">
+              <option value="red">Red</option>
+              <option value="white">White</option>
+              <option value="mixed">Mixed</option>
+              <option value="premium">Premium</option>
+            </select>
+          </div>
+          <button type="submit">Join</button>
+        </form>
+      </div>
+    </main>
   </body>
 </html>

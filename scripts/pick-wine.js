@@ -11,7 +11,7 @@ const productLink = document.getElementById("product-link");
 function pickWine(dontPick) {
   const randomIndex = Math.floor(Math.random() * wines.length);
   const wine = wines[randomIndex];
-  if (wine.id === +dontPick) {
+  if (wine.id === dontPick) {
     return pickWine(dontPick);
   }
   // preload image
@@ -32,6 +32,7 @@ function showWine(wine, preloadedImage) {
 
 let [initialWine, initialImage] = pickWine();
 showWine(initialWine, initialImage);
+
 let [nextWine, nextImage] = pickWine(initialWine.id);
 
 function showNextWine() {
@@ -39,5 +40,9 @@ function showNextWine() {
   [nextWine, nextImage] = pickWine(nextWine.id);
 }
 
+function showNextWineWithTransition() {
+  document.startViewTransition(() => showNextWine());
+}
+
 const button = document.getElementById("new-wine-button");
-button.addEventListener("click", showNextWine);
+button.addEventListener("click", showNextWineWithTransition);

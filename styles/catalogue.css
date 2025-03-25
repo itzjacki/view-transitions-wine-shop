@@ -12,6 +12,10 @@
   right: 0;
   bottom: 0;
   border-radius: 1rem;
+
+  @supports not (view-transition-name: example) {
+    z-index: -1; /* Needed to make the site break less catastrophically on firefox*/
+  }
 }
 
 .image {

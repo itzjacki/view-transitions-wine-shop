@@ -18,6 +18,10 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
+
+  @supports not (view-transition-name: example) {
+    z-index: -1; /* Needed to make the site break less catastrophically on firefox*/
+  }
 }
 
 .image {

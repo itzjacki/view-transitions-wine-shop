@@ -8,4 +8,4 @@ This demo is completely free of any libraries or external tools - so all you nee
 
 ## Why the hell is there a 500 line CSS file that only does one thing
 
-Yes - there is an egregious amount of repeated code here - that was the cost of doing this totally build-tool free 😬. If you want to make something similar, using a static site builder or some sort of light-weight web framework like Astro would be the obvious choice. The reason I did it without was to show that it was possible!
+Yes - there is an egregious amount of repeated code here - that was the cost of doing this totally build-tool-free 😬. If you want to make something similar, using a static site builder or some sort of light-weight web framework like Astro would be the obvious choice. The reason I did it without was to show that it was possible!
